@@ -1,0 +1,11 @@
+flask
+Jinja2==3.0.2
+pymorphy2==0.9.1
+pandas
+numpy
+scikit-learn
+nltk
+Flask-RESTful
+transformers==3
+gunicorn
+gevent

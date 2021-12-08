@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+
+    <form action="" method="post">
+        <p>
+		<label for="Text">Text:</label>
+	   	<input type="text" name="text">
+	</p>
+	<p>
+		<select name="neur_type" method="GET" action="/">
+  		<option value="{{neur[0]}}" selected>{{neur[0]}}</option>
+  		{% for neur_type in neur[1:] %}
+  		<option value="{{neur_type}}">{{neur_type}}</option>
+ 		{% endfor %}
+		</select>
+
+		</select>
+	</p>
+	<p>
+	    <input type="submit">
+	</p>
+	<p>
+		<label for="output">Output: {{ res }}</label>
+
+	</p>
+    </form>
+    
+
+</body>
+</html>
